@@ -30,9 +30,32 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index"><span class="glyphicon glyphicon-home" /> Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About"><span class="glyphicon glyphicon-info-sign" /> About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact"><span class="glyphicon glyphicon-envelope" /> Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">DnD <span class="caret" /></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-area="" asp-controller="Dnd" asp-action="Overview">Overview</a></li>
+                            <li><a asp-area="" asp-controller="Dnd" asp-action="Campaigns">Campaigns</a></li>
+                            <li><a asp-area="" asp-controller="Dnd" asp-action="Maps">Maps</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">MTG <span class="caret" /></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-area="" asp-controller="Mtg" asp-action="Overview">Overview</a></li>
+                            <li><a asp-area="" asp-controller="Mtg" asp-action="Decks">Decks</a></li>
+                            <li><a asp-area="" asp-controller="Mtg" asp-action="Collection">Collection</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Other <span class="caret" /></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-area="" asp-controller="Other" asp-action="Overview">Overview</a></li>
+                            <li><a asp-area="" asp-controller="Other" asp-action="Notes">Notes</a></li>
+                            <li><a asp-area="" asp-controller="Other" asp-action="World">World</a></li>
+                            <li><a asp-area="" asp-controller="Other" asp-action="Temp">Temp</a></li>
+                        </ul>
+                    </li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                 </ul>
             </div>
         </div>
