@@ -13,9 +13,9 @@ namespace RATS_Website.Controllers
             return View("MtgOverview");
         }
 
-        public IActionResult MtgOverview()
+        public IActionResult Overview()
         {
-            return View();
+            return View("MtgOverview");
         }
 
         public IActionResult Decks()

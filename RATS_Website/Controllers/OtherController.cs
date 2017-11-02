@@ -13,9 +13,9 @@ namespace RATS_Website.Controllers
             return View("OtherOverview");
         }
 
-        public IActionResult OtherOverview()
+        public IActionResult Overview()
         {
-            return View();
+            return View("OtherOverview");
         }
 
         public IActionResult Notes()

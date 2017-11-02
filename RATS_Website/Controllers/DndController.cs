@@ -13,9 +13,9 @@ namespace RATS_Website.Controllers
             return View("DndOverview");
         }
 
-        public IActionResult DndOverview()
+        public IActionResult Overview()
         {
-            return View();
+            return View("DndOverview");
         }
 
         public IActionResult Maps()
